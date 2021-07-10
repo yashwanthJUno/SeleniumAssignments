@@ -12,7 +12,8 @@ public class FibonacciSeries {
 	 * enter
 	 * 
 	 * What are my learnings from this code? 1) 2) 3)
-	 * 
+	 * 1. forloop
+	 * 2. Instead of System.out.println() , used System.out.print() to avoid Newline.
 	 */
 
 	public static void main(String[] args) {
@@ -30,6 +31,21 @@ public class FibonacciSeries {
 		// Assign sum to the second number
 		
 		// print sum
+		int range =8;
+		int firstNum=0;
+		int secNum=1;
+		int sum=0;
+		
+		 //System.out.println(firstNum+",");
+		for(int i=1; i<=range; i++) {
+			
+			System.out.print(firstNum+",");
+			
+			 //if(i<=1) { System.out.print(firstNum); }
+			 	
+		sum = firstNum+secNum; 
+		firstNum = secNum;  
+		secNum = sum;
 
 	}
 
